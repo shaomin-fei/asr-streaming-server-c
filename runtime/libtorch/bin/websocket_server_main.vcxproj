@@ -116,7 +116,7 @@
     </Midl>
     <Link>
       <AdditionalDependencies>..\websocket\Debug\websocket.lib;..\decoder\Debug\decoder.lib;..\kaldi\Debug\kaldi-decoder.lib;..\kaldi\Debug\kaldi-util.lib;..\frontend\Debug\frontend.lib;..\post_processor\Debug\post_processor.lib;..\fc_base\wetextprocessing-src\runtime\processor\Debug\wetext_processor.lib;..\fc_base\wetextprocessing-src\runtime\utils\Debug\wetext_utils.lib;..\utils\Debug\utils.lib;..\fc_base\openfst-build\src\lib\Debug\fst.lib;..\fc_base\glog-build\Debug\glogd.lib;dbghelp.lib;..\fc_base\gflags-build\Debug\gflags_nothreads_static_debug.lib;shlwapi.lib;..\fc_base\libtorch-src\lib\torch.lib;..\fc_base\libtorch-src\lib\torch_cpu.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\kineto.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
