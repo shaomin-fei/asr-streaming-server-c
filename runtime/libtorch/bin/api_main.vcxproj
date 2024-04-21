@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0628C827-6388-368A-BA52-C2940BB0A58C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>api_main</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">api_main.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">api_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">api_main.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">api_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">api_main.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">api_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">api_main.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">api_main</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/fc_base/libtorch-src/include" /external:I "C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/fc_base/libtorch-src/include/torch/csrc/api/include" -g /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4251;4522;4838;4305;4190;4101;4996;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;C10_USE_GLOG;NOMINMAX;USE_TORCH;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;GFLAGS_IS_A_DLL=0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;C10_USE_GLOG;NOMINMAX;USE_TORCH;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;GFLAGS_IS_A_DLL=0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\api\Debug\wenet_api.lib;..\decoder\Debug\decoder.lib;..\kaldi\Debug\kaldi-decoder.lib;..\kaldi\Debug\kaldi-util.lib;..\frontend\Debug\frontend.lib;..\post_processor\Debug\post_processor.lib;..\fc_base\wetextprocessing-src\runtime\processor\Debug\wetext_processor.lib;..\fc_base\wetextprocessing-src\runtime\utils\Debug\wetext_utils.lib;..\utils\Debug\utils.lib;..\fc_base\openfst-build\src\lib\Debug\fst.lib;..\fc_base\glog-build\Debug\glogd.lib;dbghelp.lib;..\fc_base\gflags-build\Debug\gflags_nothreads_static_debug.lib;shlwapi.lib;..\fc_base\libtorch-src\lib\torch.lib;..\fc_base\libtorch-src\lib\torch_cpu.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\kineto.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/Debug/api_main.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/Debug/api_main.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/fc_base/libtorch-src/include" /external:I "C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/fc_base/libtorch-src/include/torch/csrc/api/include" /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4251;4522;4838;4305;4190;4101;4996;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;C10_USE_GLOG;NDEBUG;NOMINMAX;USE_TORCH;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;GFLAGS_IS_A_DLL=0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;C10_USE_GLOG;NDEBUG;NOMINMAX;USE_TORCH;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;GFLAGS_IS_A_DLL=0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\api\Release\wenet_api.lib;..\decoder\Release\decoder.lib;..\kaldi\Release\kaldi-decoder.lib;..\kaldi\Release\kaldi-util.lib;..\frontend\Release\frontend.lib;..\post_processor\Release\post_processor.lib;..\fc_base\wetextprocessing-src\runtime\processor\Release\wetext_processor.lib;..\fc_base\wetextprocessing-src\runtime\utils\Release\wetext_utils.lib;..\utils\Release\utils.lib;..\fc_base\openfst-build\src\lib\Release\fst.lib;..\fc_base\glog-build\Release\glog.lib;dbghelp.lib;..\fc_base\gflags-build\Release\gflags_nothreads_static.lib;shlwapi.lib;..\fc_base\libtorch-src\lib\torch.lib;..\fc_base\libtorch-src\lib\torch_cpu.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\kineto.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/Release/api_main.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/Release/api_main.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/fc_base/libtorch-src/include" /external:I "C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/fc_base/libtorch-src/include/torch/csrc/api/include" /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4251;4522;4838;4305;4190;4101;4996;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;C10_USE_GLOG;NDEBUG;NOMINMAX;USE_TORCH;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;GFLAGS_IS_A_DLL=0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;C10_USE_GLOG;NDEBUG;NOMINMAX;USE_TORCH;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;GFLAGS_IS_A_DLL=0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\api\MinSizeRel\wenet_api.lib;..\decoder\MinSizeRel\decoder.lib;..\kaldi\MinSizeRel\kaldi-decoder.lib;..\kaldi\MinSizeRel\kaldi-util.lib;..\frontend\MinSizeRel\frontend.lib;..\post_processor\MinSizeRel\post_processor.lib;..\fc_base\wetextprocessing-src\runtime\processor\MinSizeRel\wetext_processor.lib;..\fc_base\wetextprocessing-src\runtime\utils\MinSizeRel\wetext_utils.lib;..\utils\MinSizeRel\utils.lib;..\fc_base\openfst-build\src\lib\MinSizeRel\fst.lib;..\fc_base\glog-build\MinSizeRel\glog.lib;dbghelp.lib;..\fc_base\gflags-build\MinSizeRel\gflags_nothreads_static.lib;shlwapi.lib;..\fc_base\libtorch-src\lib\torch.lib;..\fc_base\libtorch-src\lib\torch_cpu.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\kineto.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/MinSizeRel/api_main.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/MinSizeRel/api_main.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/fc_base/libtorch-src/include" /external:I "C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/fc_base/libtorch-src/include/torch/csrc/api/include" /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4251;4522;4838;4305;4190;4101;4996;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;C10_USE_GLOG;NDEBUG;NOMINMAX;USE_TORCH;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;GFLAGS_IS_A_DLL=0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;C10_USE_GLOG;NDEBUG;NOMINMAX;USE_TORCH;BOOST_ALL_DYN_LINK;BOOST_ALL_NO_LIB;GFLAGS_IS_A_DLL=0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-src\src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\boost-src;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-src\src\windows;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include;C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\libtorch-src\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\api\RelWithDebInfo\wenet_api.lib;..\decoder\RelWithDebInfo\decoder.lib;..\kaldi\RelWithDebInfo\kaldi-decoder.lib;..\kaldi\RelWithDebInfo\kaldi-util.lib;..\frontend\RelWithDebInfo\frontend.lib;..\post_processor\RelWithDebInfo\post_processor.lib;..\fc_base\wetextprocessing-src\runtime\processor\RelWithDebInfo\wetext_processor.lib;..\fc_base\wetextprocessing-src\runtime\utils\RelWithDebInfo\wetext_utils.lib;..\utils\RelWithDebInfo\utils.lib;..\fc_base\openfst-build\src\lib\RelWithDebInfo\fst.lib;..\fc_base\glog-build\RelWithDebInfo\glog.lib;dbghelp.lib;..\fc_base\gflags-build\RelWithDebInfo\gflags_nothreads_static.lib;shlwapi.lib;..\fc_base\libtorch-src\lib\torch.lib;..\fc_base\libtorch-src\lib\torch_cpu.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\c10.lib;..\fc_base\libtorch-src\lib\kineto.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/RelWithDebInfo/api_main.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/RelWithDebInfo/api_main.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch -BC:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch --check-stamp-file C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch -BC:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch --check-stamp-file C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch -BC:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch --check-stamp-file C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch -BC:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch --check-stamp-file C:/test/asr_integration/ASRServer/asr-streaming-server-c/runtime/libtorch/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\api_main.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\ZERO_CHECK.vcxproj">
+      <Project>{B67AEE1A-7190-300A-8B5E-516021CD6EAD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\decoder\decoder.vcxproj">
+      <Project>{1F070D15-6ED3-3070-98BE-48BE01749AB0}</Project>
+      <Name>decoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\frontend\frontend.vcxproj">
+      <Project>{5F4CFEB3-B098-348D-8377-07FC3FFE830C}</Project>
+      <Name>frontend</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\openfst-build\src\lib\fst.vcxproj">
+      <Project>{DCB2F40C-1F6A-317C-9909-60794511267D}</Project>
+      <Name>fst</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\gflags-build\gflags_nothreads_static.vcxproj">
+      <Project>{50276894-AB43-32E5-95E2-0A18DE729CAE}</Project>
+      <Name>gflags_nothreads_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\glog-build\glog.vcxproj">
+      <Project>{CD3CBA6C-98C5-37F8-8266-B774C0922610}</Project>
+      <Name>glog</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi\kaldi-decoder.vcxproj">
+      <Project>{10A80DAA-8935-32B8-9764-0E51EABB7830}</Project>
+      <Name>kaldi-decoder</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\kaldi\kaldi-util.vcxproj">
+      <Project>{FD8DA58B-85EF-31F6-81CF-DB52BB226632}</Project>
+      <Name>kaldi-util</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\post_processor\post_processor.vcxproj">
+      <Project>{340FCB4D-6EE6-35F7-9575-5347B487BB59}</Project>
+      <Name>post_processor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\utils\utils.vcxproj">
+      <Project>{99AA3040-05B4-36D8-8D5A-9212C958D384}</Project>
+      <Name>utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\api\wenet_api.vcxproj">
+      <Project>{63888A93-40C6-368C-81AA-5B3772E7D224}</Project>
+      <Name>wenet_api</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime\processor\wetext_processor.vcxproj">
+      <Project>{A63F87D7-E98B-37B2-A0A7-8E2A8F89ADAC}</Project>
+      <Name>wetext_processor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\fc_base\wetextprocessing-src\runtime\utils\wetext_utils.vcxproj">
+      <Project>{CD2A828A-A38F-3BDB-B47B-2C8657150600}</Project>
+      <Name>wetext_utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

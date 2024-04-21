@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\CMakeFiles\60e3bd0910709a931cfdac2295226dce\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BF997C33-3C9D-3C78-9A51-FC6FD49EC3EF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

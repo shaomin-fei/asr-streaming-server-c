@@ -1,0 +1,29 @@
+1. add softlink
+在runtime/libtorch文件夹，本来应该有软链接，指向runtime/core中的文件夹，但从github clone的时候，软连接失效了，需要重新建立。
+a. 删除runtime/libtorch中无效的软链接，如api, bin, cmake,etc
+b. 执行softlink.bat， 该文件的内容如下：
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\api C:\test\asr_integration\ASRServer\runtime\core\api 
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\bin C:\test\asr_integration\ASRServer\runtime\core\bin
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\cmake C:\test\asr_integration\ASRServer\runtime\core\cmake
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\decoder C:\test\asr_integration\ASRServer\runtime\core\decoder
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\frontend C:\test\asr_integration\ASRServer\runtime\core\frontend
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\grpc C:\test\asr_integration\ASRServer\runtime\core\grpc
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\http C:\test\asr_integration\ASRServer\runtime\core\http
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\kaldi C:\test\asr_integration\ASRServer\runtime\core\kaldi
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\patch C:\test\asr_integration\ASRServer\runtime\core\patch
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\post_processor C:\test\asr_integration\ASRServer\runtime\core\post_processor
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\test C:\test\asr_integration\ASRServer\runtime\core\test
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\utils C:\test\asr_integration\ASRServer\runtime\core\utils
+mklink /J C:\test\asr_integration\ASRServer\runtime\libtorch\websocket C:\test\asr_integration\ASRServer\runtime\core\websocket
+
+2. 在visual studio中选择打开文件夹，打开runtime文件夹，这个时候会让你选择cmakelist， 选择runtime/libtorch文件夹下的cmakelist.txt。当ctrl+s保持该文件时， 会自动下载需要的库
+3. 右键单击该文件，点击build可以编译并生成exe
+4. 调试的时候，会包torch_cpu.dll找不到，其实libtorch的所有DLL 都找不到， 需要将libtorch添加到系统的path环境变量，然后重启电脑（我这里的路径是C:\test\asr_integration\ASRServer\runtime\libtorch\fc_base\libtorch-src\lib， fc_base是cmakelist.txt保存并下载的时候自动生成的路径，所有的依赖都在该路径下）
+5. 传入命令行参数
+先switch to CMake Targets View in the Solution Explorer window， 在右键单击要调试的exe，选择add debug configuration,在里面添加
+"args": [
+  "--port=10086",
+  "--chunk_size=16",
+  "--model_path=C:\\test\\asr_integration\\asr\\final.zip",
+  "--unit_path=C:\\test\\asr_integration\\asr\\units.txt"
+]

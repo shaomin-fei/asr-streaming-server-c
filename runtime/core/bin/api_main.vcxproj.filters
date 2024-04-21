@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\api_main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\test\asr_integration\ASRServer\asr-streaming-server-c\runtime\libtorch\bin\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B8E9D258-1A10-3B99-A6A3-DF66858415B8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
