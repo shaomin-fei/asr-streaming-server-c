@@ -18,6 +18,7 @@
 #include <utility>
 #include <vector>
 
+
 #include "boost/json/src.hpp"
 #include "utils/log.h"
 
@@ -152,7 +153,7 @@ void ConnectionHandler::DecodeThreadFunc() {
         }
         std::shared_ptr<FeaturePipeline> pipe = GetCurrentPipeline();
         if (!pipe||!decoder_) {
-            Sleep(1);
+            std::this_thread::sleep_for(std::chrono::milliseconds(1));
             continue;
         }
       DecodeState state = decoder_->Decode();
@@ -172,7 +173,7 @@ void ConnectionHandler::DecodeThreadFunc() {
         
         std::shared_ptr<FeaturePipeline> current=GetCurrentPipeline();
         while (!current) {
-            Sleep(1);
+            std::this_thread::sleep_for(std::chrono::milliseconds(1));
             if (got_end_tag_) {
                 return;
             }
